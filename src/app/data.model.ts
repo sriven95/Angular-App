@@ -19,11 +19,7 @@ export interface Bookings {
     luggage : String,
     flight_name : String,
     timing : String,
-    passenger_name1 : String,
-    passenger_name2 : String,
+    passenger_name1 : {type : String},
+    passenger_name2 : {type : String},
     status : String,
-    name : String,
-    email : String,
-    phnum : String,
-    comment :String,
 }

@@ -100,8 +100,6 @@ export class LoginComponent implements OnInit {
 
           })
           this.dialogRef.close();
-          this.ngOnInit();
-       //   this.router.navigate(['homepage']);
         })
       }
     });
