@@ -49,7 +49,7 @@ export class NewUserComponent implements OnInit {
       fromDate :['', Validators.required] ,
       toDate : '',
       count: '',
-      flight_name : ['', Validators.required],
+      car_name : ['', Validators.required],
       timing : ['', Validators.required],
       luggage : ['', Validators.required],
       License1 : ['', Validators.required],

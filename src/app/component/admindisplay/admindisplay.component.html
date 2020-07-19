@@ -58,9 +58,9 @@
               <mat-header-cell *matHeaderCellDef>Destination</mat-header-cell>
               <mat-cell *matCellDef="let opt" [matTooltip]="opt.toPlace">{{opt.toPlace}}</mat-cell>
             </ng-container>
-            <ng-container matColumnDef="flight_name">
+            <ng-container matColumnDef="car_name">
               <mat-header-cell *matHeaderCellDef>Car</mat-header-cell>
-              <mat-cell *matCellDef="let opt" [matTooltip]="opt.flight_name">{{opt.flight_name}}</mat-cell>
+              <mat-cell *matCellDef="let opt" [matTooltip]="opt.car_name">{{opt.car_name}}</mat-cell>
             </ng-container>
             <ng-container matColumnDef="timing">
               <mat-header-cell *matHeaderCellDef>Time</mat-header-cell>
@@ -85,7 +85,7 @@
               </mat-panel-description>
             </mat-expansion-panel-header>
             <div><mat-label> Car : </mat-label>
-              {{item.flight_name}}
+              {{item.car_name}}
             </div>
             <div><mat-label> Time : </mat-label>
               {{item.timing}}

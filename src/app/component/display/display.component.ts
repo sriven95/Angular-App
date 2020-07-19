@@ -17,7 +17,7 @@ export class DisplayComponent implements OnInit {
   dataSource : any;
   myForm = [];
   myFormEle : FormGroup;
-  colValue : any = ['_id', 'tripType', 'fromPlace', 'toPlace', 'fromDate','toDate', 'luggage','count', 'flight_name', 'timing', 'status'];
+  colValue : any = ['_id', 'tripType', 'fromPlace', 'toPlace', 'fromDate','toDate', 'luggage','count', 'car_name', 'timing', 'status'];
   @ViewChild('MatPaginator', {static: true}) MatPaginator: MatPaginator;
   @ViewChild( 'MatSort' , {static: true}) sort: MatSort;
   regimes = ['12','13','14'];

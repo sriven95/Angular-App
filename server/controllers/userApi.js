@@ -67,6 +67,7 @@ exports.deleteUser = (req,res,next) => {
 exports.upload = (req,res,next) => {
   var data = [];
   form.parse(req);
+
   form.on('fileBegin',(name,file) =>
   {
     file.name='file1.jpeg'

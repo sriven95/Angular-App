@@ -17,7 +17,7 @@ export interface Bookings {
     toDate : Date,
     count:Boolean,
     luggage : String,
-    flight_name : String,
+    car_name : String,
     timing : String,
     passenger_name1 : {type : String},
     passenger_name2 : {type : String},

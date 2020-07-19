@@ -20,7 +20,7 @@ const bookingSchema = new Schema({
     toDate : {type : Date},
     count: {type: Boolean},
     luggage : {type : String},
-    flight_name : {type: String},
+    car_name : {type: String},
     timing : {type: String},
     passenger_name1 : {type : String},
     passenger_name2 : {type : String},

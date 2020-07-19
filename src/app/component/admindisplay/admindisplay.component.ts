@@ -16,7 +16,7 @@ export class AdmindisplayComponent implements OnInit {
   dataSource : any;
   myForm = [];
   myFormEle : FormGroup;
-  colValue : any = ['_id','email', 'tripType', 'fromPlace', 'toPlace', 'count','fromDate', 'toDate','luggage' ,'flight_name', 'timing', 'status'];
+  colValue : any = ['_id','email', 'tripType', 'fromPlace', 'toPlace', 'count','fromDate', 'toDate','luggage' ,'car_name', 'timing', 'status'];
   @ViewChild('MatPaginator', {static: true}) MatPaginator: MatPaginator;
   @ViewChild( 'MatSort' , {static: true}) sort: MatSort;
 

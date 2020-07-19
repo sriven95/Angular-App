@@ -45,7 +45,7 @@ export class EditComponent implements OnInit {
       fromDate :['', Validators.required] ,
       toDate : '',
       count: ['', Validators.required],
-      flight_name : ['', Validators.required],
+      car_name : ['', Validators.required],
       timing : ['', Validators.required],
       luggage : ['', Validators.required],
     });
@@ -70,7 +70,7 @@ export class EditComponent implements OnInit {
       fromDate : data[0].fromDate ,
       toDate : data[0].toDate,
       count: data[0].count,
-      flight_name : data[0].flight_name,
+      car_name : data[0].car_name,
       timing : data[0].timing,
       luggage : data[0].luggage,
       });
