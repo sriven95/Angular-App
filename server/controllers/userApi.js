@@ -13,7 +13,6 @@ exports.getUserDetails = (req,res,next)=>{
   console.log(req.body);
   User.find({"email":req.body.email, "pwd":req.body.pwd}).then(data=>{
     console.log(data);
-    //data['pwd'] = '';
     res.status(200).send(data);
   }).catch(err=>{
     res.status(500).send(err);
@@ -84,34 +83,4 @@ exports.upload1 = (req,res,next) => {
     file.path=`C:/workspace/Taxiwala/license 2/${file.name}`;
   })
   res.status(200).send(data);
-}
-exports.upload2 = (req,res,next) => {
-  var data = [];
-  form.parse(req);
-  form.on('fileBegin',(name,file) =>
-  {
-    file.name='file1.jpeg'
-    file.path=`C:/workspace/Taxiwala/src/assets/${file.name}`;
-  })
-  res.status(200).send(data);
-}
-exports.upload3 = (req,res,next) => {
-  var data = [];
-  form.parse(req);
-  console.log('upload 30');
-  form.on('fileBegin',(name,file) =>
-  {
-    file.name=req.params.filename;
-    console.log(file.name);
-    file.path=`C:/workspace/Taxiwala/src/assets/${file.name}`;
-  })
-  var id=String.parse(res.params.filename);
-  console.log(id);
-  console.log(typeOf(id));
-  User.update({"_id":id[0]},{$set:{"isDp":true}}).then(data => {
-    res.status(200).send(data);
-  }
-  ).catch(err => {
-    res.status(500).send(err);
-  })
 }

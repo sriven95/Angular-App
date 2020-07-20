@@ -27,8 +27,7 @@ router.put('/approveBooking/:id', BookingController.approveBookingDetails);
 router.delete('/deleteBooking/:id', BookingController.deleteBooking);
 router.post('/file',UserController.upload);
 router.post('/file1',UserController.upload1);
-router.post('/file2',UserController.upload2);
-router.post('/file3/:filename',UserController.upload3);
+
 
 
 module.exports = router;

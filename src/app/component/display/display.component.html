@@ -62,7 +62,6 @@
                 <mat-header-cell *matHeaderCellDef>Time</mat-header-cell>
                 <mat-cell *matCellDef="let opt" [matTooltip]="opt.timing">{{opt.timing}}</mat-cell>
               </ng-container>
-  
                 <mat-header-row *matHeaderRowDef="colValue"></mat-header-row>
                 <mat-row *matRowDef="let row; columns: colValue;"></mat-row>
               </mat-table>
@@ -94,14 +93,8 @@
                   {{item.toPlace}}
                 </div>
               </mat-expansion-panel>
-
             </mat-accordion>
-
           </mat-tab>
           </mat-tab-group>
         </fieldset>
-
-
-
-
   </div>

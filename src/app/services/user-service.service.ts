@@ -107,15 +107,6 @@ export class UserServiceService {
     formData.append('file',file);
     return this.http.post(this.base+'/file1',formData,{withCredentials:true}).pipe(map(result => result));
   }
-  upload2(file : any){
-    const formData =new FormData();
-    formData.append('file',file);
-    return this.http.post(this.base+'/file2',formData,{withCredentials:true}).pipe(map(result => result));
-  }
-  upload3(file : any,filename:any){
-    const formData =new FormData();
-    formData.append('file',file);
-    return this.http.post(this.base+'/file3/'+filename,formData,{withCredentials:true}).pipe(map(result => result));
-  }
+  
  
 }

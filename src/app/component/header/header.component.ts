@@ -29,21 +29,6 @@ export class HeaderComponent implements OnInit {
       }
       
     }
-    // if(localStorage.getItem('currentUser') != null){
-    //   console.log(JSON.parse(localStorage.getItem('currentUser')));
-    //   this.val =  JSON.parse(localStorage.getItem('currentUser'));
-    //   console.log(this.val[0]);
-    //   this.uname = 'Welcome '+this.val[0].uName;
-    // }
-
-   // console.log(this.userService.checkIsLogin())
-    // if(!this.userService.checkIsLogin()){
-    //   this.router.navigate(['/login']);
-    // }
-  }
-
-  search(event: any){
-    console.log(event.target.value);
   }
 
   logOut(){

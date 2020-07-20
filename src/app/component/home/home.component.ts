@@ -22,9 +22,6 @@ export class HomeComponent implements OnInit {
       this.isAdmin=this.authenticationService.currentUserValue[0].isAdmin;
 
     }
-    // if(!this.userService.checkIsLogin()){
-    //   this.router.navigate(['/login']);
-    // }
   }
   
   search(event: any){

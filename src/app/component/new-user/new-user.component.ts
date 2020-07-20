@@ -87,8 +87,6 @@ export class NewUserComponent implements OnInit {
     if(this.myForm.value.tripType === 'One Way'){
       this.myForm.value.toDate = '';
     }
-    //console.log(this.authService.currentUserValue);
-    //var fullData = Object.assign(this.myForm.value, this.booking.user);
     console.log(this.booking);
     this.userService.submitNewBookingDetails(this.booking).subscribe(data => {
       this._snackBar.open('Success','Ok',{
